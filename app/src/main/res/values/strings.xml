@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">petcare</string>
+    <string name="add_reminder">Add Reminder</string>
+    <string name="daily_schedule">Daily Schedule</string>
+    <string name="health_tracker">Health Tracker</string>
+    <string name="grooming_reminders">Grooming Reminders</string>
+</resources>

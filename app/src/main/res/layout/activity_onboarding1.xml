@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Onboarding1"
+    android:background="#FFF9E3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/camera" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="450dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:text="Discover Your Next Adventure"
+            android:textColor="@color/accentColor"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="450dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="    Discover amazing destinations. \n       Let’s start your journey with a \n                      quick guide!"
+            android:textColor="@color/accentColor"
+            android:textSize="21sp"
+            android:textStyle="" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next1btn"
+            style="@android:style/Widget.Button"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="150dp"
+            android:background="@drawable/button"
+            android:text="Next"
+            android:textColor="@color/primaryColor"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@drawable/home2">
+
+
+
+        <!-- Motivational Quote -->
+        <TextView
+            android:id="@+id/tvQuote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:text="Welcome, Traveler"
+            android:textAlignment="center"
+            android:textColor="@color/accentColor"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <!-- Search Bar -->
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvQuote"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edit_text"
+            android:hint="sigiriya"
+            android:padding="12dp"
+            android:inputType="text"/>
+
+        <!-- Grid of 4 Square Buttons -->
+        <GridLayout
+            android:id="@+id/gridButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etSearch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:rowCount="2"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:layout_gravity="center">
+
+            <!-- Button 1 -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnOption1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_margin="8dp"
+                android:background="@drawable/button"
+                android:text="Travel \nPlans"
+                android:textColor="@color/primaryColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Button 2 -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnOption2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/button"
+                android:text="Location \nDetails"
+                android:textColor="@color/primaryColor"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <!-- Button 3 -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnOption3"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/button"
+                android:text="Support"
+                android:textColor="@color/primaryColor"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <!-- Button 4 -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnOption4"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/button"
+                android:text="My Profile"
+                android:textColor="@color/primaryColor"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+        </GridLayout>
+
+    </RelativeLayout>
+
+    <!-- Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/accentColor"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Home Icon -->
+        <ImageView
+            android:id="@+id/ivHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Home"
+            android:src="@drawable/baseline_home_24"
+            android:tint="@color/primaryColor"/>
+
+        <!-- Profile Icon -->
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Profile"
+            android:src="@drawable/baseline_person_24"
+            android:tint="@color/primaryColor"/>
+
+        <!-- Support Icon -->
+        <ImageView
+            android:id="@+id/ivSupport"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Support"
+            android:src="@drawable/baseline_contact_support_24"
+            android:tint="@color/primaryColor"/>
+
+        <!-- Cart Icon -->
+        <ImageView
+            android:id="@+id/ivCart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Cart"
+            android:src="@drawable/baseline_shopping_cart_24"
+            android:tint="@color/primaryColor"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
